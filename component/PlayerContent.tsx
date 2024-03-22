@@ -13,10 +13,12 @@ import Slider from "./Slider";
 
 interface PlayerContentProps {
   song: Song;
+  songUrl: string
 }
 
 const PlayerContent: React.FC<PlayerContentProps> = ({ 
   song, 
+  songUrl
 }) => {
   const baseUrl = 'https://ndauwskxwcmksqssmtqr.supabase.co/storage/v1/object/public/songs/'
   const player = usePlayer();
